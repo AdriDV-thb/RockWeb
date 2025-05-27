@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álbumes Icónicos del Rock</title>
+    <link rel="stylesheet" href="/styles/albumes-iconicos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Big+Shoulders:wght@400;700&family=Kanit:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="/assets/favicon/guitarra-electrica.png" type="image/png">
+    <script src="/scripts/car-shop.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>La Historia Del Rock</h1>
+            </div>
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/sub-pages/sobre-mi.html">About Me</a></li>
+                <li><a href="/sub-pages/sobre-ti.html">About You</a></li>
+                <li class="cart-icon">
+                    🛒 <span id="cart-count">0</span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <h2>Carrito de Compras</h2>
+            <div id="cart-items"></div>
+            <div class="cart-total">
+                <p>Total: $<span id="cart-total">0</span></p>
+                <button id="checkout">Comprar</button>
+            </div>
+            <button id="close-modal">Cerrar</button>
+        </div>
+    </div>
+
+    <section class="sub-header">
+        <h2>Álbumes Icónicos del Rock</h2>
+        <p>Conozcamos los discos más influyentes del género.</p>
+    </section>
+
+    <main class="container">
+        <section class="gallery">
+            <div class="album">
+                <img src="/assets/Img/pink-floyd.jpg" alt="The Dark Side of the Moon">
+                <h3>The Dark Side of the Moon</h3>
+                <p>Pink Floyd (1973)</p>
+                <p class="price">$29.99</p>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+            <div class="album">
+                <img src="/assets/Img/Abbey-Road.jpg" alt="Abbey Road">
+                <h3>Abbey Road</h3>
+                <p>The Beatles (1969)</p>
+                <p class="price">$29.99</p>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+            <div class="album">
+                <img src="/assets/Img/Led-Zeppelin.jpg" alt="Led Zeppelin IV">
+                <h3>Led Zeppelin IV</h3>
+                <p>Led Zeppelin (1971)</p>
+                <p class="price">$29.99</p>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+            <div class="album">
+                <img src="/assets/Img/AC-DC.jpg" alt="Back in Black">
+                <h3>Back in Black</h3>
+                <p>AC/DC (1980)</p>
+                <p class="price">$29.99</p>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+            <div class="album">
+                <img src="/assets/Img/pink-floyd2.jpg" alt="The Wall">
+                <h3>The Wall</h3>
+                <p>Pink Floyd (1979)</p>
+                <p class="price">$29.99</p>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+            <div class="album">
+                <img src="/assets/Img/Hotel-Califronia.jpg" alt="Hotel California">
+                <h3>Hotel California</h3>
+                <p>Eagles (1976)</p>
+                <p class="price">$29.99</p>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+            <div class="album">
+                <img src="/assets/Img/Queen.jpg" alt="A Night at the Opera">
+                <h3>A Night at the Opera</h3>
+                <p>Queen (1975)</p>
+                <p class="price">$29.99</p>
+                <button class="add-to-cart">Agregar al carrito</h3>
+            </div>
+            <div class="album">
+                <img src="/assets/Img/Nirvana.jpg" alt="In Utero">
+                <h3>In Utero</h3>
+                <p>Nirvana (1993)</p>
+                <p class="price">$29.99</p>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+            <div class="album">
+                <img src="/assets/Img/Fleetwood-Mac.jpg" alt="Rumours">
+                <h3>Rumours</h3>
+                <p>Fleetwood Mac (1977)</p>
+                <p class="price">$29.99</p>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+            <div class="album">
+                <img src="/assets/Img/Bruce-Springsteen.jpg" alt="Born to Run">
+                <h3>Born to Run</h3>
+                <p>Bruce Springsteen (1975)</p>
+                <p class="price">$29.99</p>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+            <div class="album">
+                <img src="/assets/Img/The-Rolling-Stones.jpg" alt="Exile on Main St">
+                <h3>Exile on Main St</h3>
+                <p>The Rolling Stones (1972)</p>
+                <p class="price">$29.99</p>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+            <div class="album">
+                <img src="/assets/Img/Guns-N-Roses.jpg" alt="Appetite for Destruction">
+                <h3>Appetite for Destruction</h3>
+                <p>Guns N' Roses (1987)</p>
+                <p class="price">$29.99</p>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Historia del Rock - AdriHDZ-DV</p>
+            <div class="links">
+                <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                <a href="https://www.x.com" target="_blank">Twitter</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

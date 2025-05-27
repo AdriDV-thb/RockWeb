@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="/styles/sobre-ti.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Big+Shoulders:wght@400;700&family=Kanit:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="/assets/favicon/guitarra-electrica.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>La Historia Del Rock</h1>
+            </div>
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/sub-pages/sobre-mi.html">About Me</a></li>
+                <li><a href="/sub-pages/albumes-iconicos.html">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="sub-header">
+        <h2>Hablame Sobre ti</h2>
+        <p>¿Qué te apasiona sobre el rock?</p>
+    </section>
+
+    <main class="container">
+        <section id="formulario" class="contenido">
+            <h3>Cuentame tu historia rockera</h3>
+            <form action="../php/formulario.php" method="POST" onsubmit="mostrarAgradecimiento()">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required placeholder="Tu correo electrónico">
+
+                <label for="banda-favorita">¿Cuál es tu banda favorita de rock?</label>
+                <input type="text" id="banda-favorita" name="banda-favorita" required placeholder="Tu banda favorita">
+
+                <label for="cancion-favorita">¿Qué canción de rock no puede faltar en tu playlist?</label>
+                <input type="text" id="cancion-favorita" name="cancion-favorita" required
+                    placeholder="Tu canción favorita">
+
+                <label for="genero">¿Qué género de rock prefieres?</label>
+                <select id="genero" name="genero" required>
+                    <option value="rock-clasico">Rock Clásico</option>
+                    <option value="punk">Punk</option>
+                    <option value="metal">Metal</option>
+                    <option value="grunge">Grunge</option>
+                    <option value="indie">Indie</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <label for="comentarios">¿Tienes alguna recomendación o historia relacionada con el rock?</label>
+                <textarea id="comentarios" name="comentarios" rows="5"
+                    placeholder="Cuentame Tu Pasion Del Rock"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Historia del Rock - AdriHDZ-DV</p>
+            <div class="links">
+                <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                <a href="https://www.x.com" target="_blank">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function mostrarAgradecimiento() {
+            alert("Gracias por tu respuesta");
+        }
+    </script>
+</body>
+
+</html>

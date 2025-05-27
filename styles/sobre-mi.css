@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav .logo h1 {
+    font-family: 'Big Shoulders', cursive;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff4500;
+}
+
+.sub-header {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/assets/Img/Header1.jpg');
+    height: 250px;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.sub-header h2 {
+    font-family: 'Big Shoulders', cursive;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.sub-header p {
+    font-size: 1.2rem;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.contenido {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* text-align: center; */
+}
+
+.contenido h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+    border-bottom: 3px solid #ff4500;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.contenido ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contenido ul li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #ff4500;
+}
+
+strong {
+    font-weight: bold;
+}
+
+#Cancion1 {
+    color: green;
+    font-weight: bold;
+}
+
+#Cancion2 {
+    color: royalblue;
+    font-weight: bold;
+}
+
+#Cancion3 {
+    color: orangered;
+    font-weight: bold;
+}
+
+#Cancion4 {
+    color: purple;
+    font-weight: bold;
+}
